@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Support & FAQ
+    url: https://github.com/temmink/RCMounterForDJI#troubleshooting
+    about: Check the Troubleshooting section for common fixes before filing an issue.
+  - name: License & Purchase Support
+    url: https://www.snelgraveren.nl/product/rc-mounter-for-dji/
+    about: For license or purchase questions, visit the product page or email info@snelgraveren.nl.

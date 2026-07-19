@@ -1,0 +1,63 @@
+name: Feature Request
+description: Suggest an idea or improvement for DJI-RC Mounter
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Got an idea? Great — I'd love to hear it. The more context you give, the easier it is to understand and prioritise.
+
+  - type: checkboxes
+    id: preflight
+    attributes:
+      label: Before you file
+      options:
+        - label: I've checked the [existing issues](https://github.com/temmink/RCMounterForDJI/issues) and this hasn't been requested before
+          required: true
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: Which area does this relate to?
+      options:
+        - USB connection / device detection
+        - Files tab (MTP file browser)
+        - Media tab (photos / videos)
+        - Waypoints tab
+        - Finder mount (FileProvider)
+        - Settings
+        - General / UI
+        - New feature (doesn't fit existing tabs)
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem does this solve?
+      description: Describe the situation or workflow that prompted this request. What are you trying to do that's currently difficult or impossible?
+      placeholder: "e.g. I frequently transfer large batches of DNG photos and it's hard to tell which ones I've already downloaded."
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: Describe the feature you'd like
+      description: What would you like the app to do? Be as specific as you like.
+      placeholder: "e.g. Show a 'already downloaded' badge (checkmark) on files that already exist in the destination folder with the same name and size."
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives you've considered
+      description: Any workarounds you're currently using, or alternative approaches that could solve the same problem?
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Anything else?
+      description: Mockups, links to similar features in other apps, or any other context.
