@@ -135,7 +135,7 @@ RC Mounter for DJI is proprietary software. The source code is not included in t
 
 RC Mounter for DJI is developed and maintained by [Martin Temmink](https://github.com/temmink).
 
-For support inquiries: info@snelgraveren.nl
+For support inquiries: sales@snelgraveren.nl
 
 ---
 
