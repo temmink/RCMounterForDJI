@@ -2,29 +2,31 @@
 
 # RC Mounter for DJI
 
-**Direct USB file access for your DJI RC2, RC Pro, and RC Pro 2 on macOS.**
+**Transfer files from a DJI RC2, DJI RC Pro or DJI RC Pro 2 controller to your Mac over USB-C.**
 
-Browse, download, and manage files on your DJI remote controller — no drivers, no DJI software, no cloud.
+Flight records (flight logs), screenshots, movies and waypoint missions — one click, no drivers, no DJI software, no cloud.
 
 [![macOS 14+](https://img.shields.io/badge/macOS-14%2B-blue?logo=apple&logoColor=white)](#requirements)
 [![Latest Release](https://img.shields.io/github/v/release/temmink/RCMounterForDJI?label=download&color=brightgreen)](https://github.com/temmink/RCMounterForDJI/releases/latest)
 [![License](https://img.shields.io/badge/license-proprietary-lightgrey)](#license)
 
-<!-- TODO: Uncomment when screenshot is available
 <br>
 
-![RC Mounter for DJI — main window](screenshots/main-window.png)
--->
+<img src="https://www.snelgraveren.nl/Apps/RCMounterForDJI/screenshots/mainscreen.png" alt="RC Mounter for DJI on macOS showing a connected DJI RC2 with internal storage and SD card" width="720">
 
-[Download Latest Release](https://github.com/temmink/RCMounterForDJI/releases/latest) &nbsp;&bull;&nbsp; [Buy License](https://www.snelgraveren.nl/product/rc-mounter-for-dji/) &nbsp;&bull;&nbsp; [Support & FAQ](https://github.com/temmink/RCMounterForDJI/issues)
+[Download Latest Release](https://github.com/temmink/RCMounterForDJI/releases/latest) &nbsp;&bull;&nbsp; [Website](https://www.snelgraveren.nl/Apps/RCMounterForDJI/) &nbsp;&bull;&nbsp; [Buy License](https://www.snelgraveren.nl/product/rc-mounter-for-dji/) &nbsp;&bull;&nbsp; [FAQ](#faq) &nbsp;&bull;&nbsp; [Support](https://github.com/temmink/RCMounterForDJI/issues)
+
+[English](https://www.snelgraveren.nl/Apps/RCMounterForDJI/) · [Nederlands](https://www.snelgraveren.nl/Apps/RCMounterForDJI/nl/) · [Deutsch](https://www.snelgraveren.nl/Apps/RCMounterForDJI/de/) · [Français](https://www.snelgraveren.nl/Apps/RCMounterForDJI/fr/) · [Español](https://www.snelgraveren.nl/Apps/RCMounterForDJI/es/)
 
 </div>
 
 ---
 
-## What is RC Mounter?
+## What is RC Mounter for DJI?
 
-RC Mounter for DJI is a native macOS app that connects to your **DJI RC2**, **DJI RC Pro**, or **DJI RC Pro 2** controller via USB-C and gives you full file access using the MTP (Media Transfer Protocol) — the same protocol Android uses for file transfers.
+RC Mounter for DJI is a native macOS app that transfers files between a Mac and DJI's Android-based screen controllers — the **DJI RC2**, **DJI RC Pro** and **DJI RC Pro 2** — over a USB-C cable. It uses MTP (Media Transfer Protocol), the protocol Android devices use for file transfer.
+
+**Why do you need it?** macOS does not support MTP, so when you plug a DJI RC2 or RC Pro 2 into a Mac it never shows up in Finder. Windows opens these controllers natively; on a Mac you need an app that speaks MTP over USB. RC Mounter does exactly that — and it knows where DJI Fly keeps flight logs, waypoint missions and media.
 
 Plug in your controller, and within seconds you can browse its storage, download flight records, manage media, back up everything, and even swap waypoint mission files.
 
@@ -44,9 +46,7 @@ Reclaim storage on the controller by clearing whole categories of files (media, 
 ### Media Browser
 Browse photos and videos directly on the controller. Grid or list view with thumbnails. Right-click to preview, download, or delete files on the device.
 
-<!-- TODO: Uncomment when screenshot is available
-![Media Browser](screenshots/media-browser.png)
--->
+<img src="https://www.snelgraveren.nl/Apps/RCMounterForDJI/screenshots/media_overview.png" alt="RC Mounter for DJI media browser listing movies on a DJI RC2" width="720">
 
 ### Waypoint Mission Manager
 Browse waypoint mission files stored on the controller. Drag and drop a KMZ file from Finder to replace a mission in-place — perfect for updating planned routes before a flight.
@@ -87,16 +87,58 @@ RC Mounter works immediately with a **free trial of 10 file downloads**. After t
 
 Activation is instant — enter your email and activation code in the app, and you're set. No subscription, no recurring fees.
 
+## Supported DJI Controllers
+
+| Controller | Used with (examples) | Status |
+|---|---|---|
+| **DJI RC2** | DJI Air 3, Air 3S, Mini 4 Pro | Supported |
+| **DJI RC Pro** | DJI Mavic 3 series, Air 2S, Mini 3 Pro | Supported |
+| **DJI RC Pro 2** | DJI Mavic 4 Pro | Supported |
+
+Controllers without a screen (DJI RC-N1, RC-N2, RC-N3) don't store files — your phone does — so they don't need RC Mounter. Other Android-based DJI screen controllers may work but are untested; try them with the free trial.
+
 ## Requirements
 
 | | Minimum |
 |---|---|
-| **macOS** | 14 Sonoma or later |
+| **macOS** | 14 Sonoma or later (Apple Silicon and Intel) |
 | **Controller** | DJI RC2, DJI RC Pro, DJI RC Pro 2 |
 | **Connection** | USB-C cable (direct to Mac) |
 | **Disk space** | ~15 MB |
 
 > **Note:** RC Mounter is a macOS-only app. It is not available for Windows or Linux.
+
+## FAQ
+
+### How do I transfer files from a DJI RC2 to a Mac?
+Install **RC Mounter for DJI**, connect the DJI RC2 to your Mac with a USB-C data cable and switch the controller on. The app detects it automatically. Click **Flight Records**, **Screenshots**, **Movies** or **Waypoints** in the sidebar and choose a folder on your Mac. The same works for the DJI RC Pro and DJI RC Pro 2.
+
+### Why doesn't my Mac show my DJI RC2 or RC Pro 2 in Finder?
+DJI's screen controllers run Android and share files over **MTP (Media Transfer Protocol)**. macOS only mounts USB drives and cameras, not MTP devices, so the controller never shows up in Finder. Windows supports MTP natively; on a Mac you need an app such as RC Mounter for DJI that speaks MTP over USB.
+
+### How do I get DJI flight logs (flight records) from the controller onto my Mac?
+Click **Flight Records** in RC Mounter. It collects the flight logs from all the places DJI Fly stores them on the controller's internal storage and copies them to your Mac, keeping the folder structure. You can then upload the log files to a flight log viewer or analysis service of your choice.
+
+### Can I back up waypoint missions (KMZ) and put them back on the controller?
+Yes. **Waypoints** downloads every waypoint mission with its folder structure. To change a mission, open it in the Waypoints tab and drag a new KMZ file from Finder onto it — RC Mounter replaces the mission file on the controller. **Back Up / Restore** saves and restores all DJI data, including waypoints, for example after a factory reset.
+
+### Which DJI controllers and drones are supported?
+The **DJI RC2** (used with e.g. DJI Air 3, Air 3S and Mini 4 Pro), the **DJI RC Pro** (Mavic 3 series, Air 2S, Mini 3 Pro) and the **DJI RC Pro 2** (Mavic 4 Pro). Controllers without a screen, such as the RC-N1, RC-N2 and RC-N3, store nothing themselves, so they don't need this app.
+
+### Do I need DJI Fly, DJI Assistant or extra drivers on my Mac?
+No. RC Mounter talks to the controller directly over USB. You don't need DJI software, drivers, Android File Transfer, a DJI account or an internet connection to transfer files.
+
+### Does RC Mounter for DJI work on Windows?
+No, it is a macOS-only app (macOS 14 Sonoma or later, Apple Silicon and Intel). On Windows you don't need it: File Explorer can open MTP devices such as the DJI RC2 natively.
+
+### How much does RC Mounter for DJI cost?
+The first **10 file downloads are free**, no account required. After that a **one-time license costs €7.50** per Mac — no subscription. You receive an activation code by email and enter it in the app.
+
+### Can I free up storage space on my DJI controller?
+Yes. After a download RC Mounter offers to delete the downloaded files from the controller. **Clean Up Disk Space** clears whole categories (media, waypoints, flight records, logs, cache) with a size preview, and **Free Up Space** only empties the DJI app's caches without touching your media or flight data.
+
+### Are my files uploaded to the cloud?
+No. Files go directly from the controller to your Mac over the USB cable. RC Mounter has no cloud sync and does not collect your data. It only contacts the internet to check for app updates and to activate a license.
 
 ## Troubleshooting
 
